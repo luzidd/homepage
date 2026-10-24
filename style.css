@@ -1,8 +1,8 @@
 :root {
-  --background: #f5eff7;
-  --text: #29152f;
-  --muted: #705c79;
-  --link: #75408f;
+  --background: #f4f2f9;
+  --text: #282038;
+  --muted: #6b627e;
+  --link: #69509a;
 
   color-scheme: light dark;
   font-family: ui-monospace, monospace;
@@ -78,9 +78,9 @@ a:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a0b20;
-    --text: #f1eaf4;
-    --muted: #c8a5d2;
-    --link: #d6b4ed;
+    --background: #14101f;
+    --text: #f0edf7;
+    --muted: #bab1cc;
+    --link: #ccb8f5;
   }
 }
