@@ -1,8 +1,13 @@
 :root {
+  --background: #f5eff7;
+  --text: #29152f;
+  --muted: #705c79;
+  --link: #75408f;
+
   color-scheme: light dark;
   font-family: ui-monospace, monospace;
-  color: #341439;
-  background: #f7f2f8;
+  color: var(--text);
+  background: var(--background);
   line-height: 1.6;
 }
 
@@ -19,15 +24,21 @@ body {
 }
 
 main {
-  width: 100%;
-  max-width: 48rem;
+  width: max-content;
+  max-width: 100%;
   margin-inline: auto;
 }
 
 .eyebrow {
-  color: #645168;
+  color: var(--muted);
   font-family: ui-monospace, monospace;
   letter-spacing: 0.08em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--muted);
+  margin: 1rem 0;
 }
 
 h1 {
@@ -45,7 +56,7 @@ h1 {
 a {
   display: inline-block;
   margin-top: 1.5rem;
-  color: #63316f;
+  color: var(--link);
   text-underline-offset: 0.3em;
 }
 
@@ -61,15 +72,9 @@ a:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #eceee8;
-    background: #341439;
-  }
-
-  .eyebrow {
-    color: #adbdac;
-  }
-
-  a {
-    color: #a5dfae;
+    --background: #1a0b20;
+    --text: #f1eaf4;
+    --muted: #c8a5d2;
+    --link: #d6b4ed;
   }
 }
