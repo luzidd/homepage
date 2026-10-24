@@ -53,9 +53,15 @@ h1 {
   font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 
+.links {
+  line-height: 2.0;
+}
+
+.links p {
+  margin: 0;
+}
+
 a {
-  display: inline-block;
-  margin-top: 1.5rem;
   color: var(--link);
   text-underline-offset: 0.3em;
 }
